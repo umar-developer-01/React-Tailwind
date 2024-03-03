@@ -21,8 +21,8 @@ const PeerProduct: React.FC<PeerProductProps> = () => {
         <div className="flex justify-center items-center h-screen antialiased text-gray-900">
             <div className="bg-white w-96 flex flex-col gap-2 shadow-xl rounded-lg overflow-hidden border">
                 <img src={Jacket} alt="Jacket" className="h-[400px] w-96 object-cover object-center" />
-                <div className="p-6">
-                    <div className="flex items-baseline mt-2 mb-6 pb-6 border-b border-slate-200">
+                <div className="p-6 pt-2">
+                    <div className="flex items-baseline mt-1 mb-6 pb-6 border-b border-slate-200">
                         <div className="space-x-2 flex text-sm">
                             {['xs', 's', 'm', 'l', 'xl'].map((size) => (
                                 <label key={size}>
