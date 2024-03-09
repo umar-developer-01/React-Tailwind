@@ -21,10 +21,10 @@ const PeerProduct: React.FC<PeerProductProps> = () => {
         <div className="bg-gray-100 flex justify-center items-center h-screen antialiased text-gray-900">
             <div className="w-96 flex flex-col gap-2  rounded-lg overflow-hidden">
                 <img src={Jacket} alt="Jacket" className="h-[400px] w-96 object-cover object-center shadow-md" />
-                <div className="relative px-4 -mt-6">
+                <div className="relative px-4 -mt-12">
                     <div className="bg-white p-6 pt-2 rounded-lg shadow-lg">
 
-                        <div className="mt-1 flex items-baseline mb-4 pb-6">
+                        <div className="mt-1 flex items-baseline mb-1 pb-4">
                             <div className="space-x-2 flex text-sm">
                                 {['xs', 's', 'm', 'l', 'xl'].map((size) => (
                                     <label key={size}>
