@@ -22,7 +22,8 @@ const PeerProduct: React.FC<PeerProductProps> = () => {
             <div className="bg-white w-96 flex flex-col gap-2 shadow-xl rounded-lg overflow-hidden border">
                 <img src={Jacket} alt="Jacket" className="h-[400px] w-96 object-cover object-center" />
                 <div className="p-6 pt-2">
-                    <div className="flex items-baseline mt-1 mb-6 pb-6 border-b border-slate-200">
+
+                    <div className="mt-1 flex items-baseline mb-4 pb-6 border-b border-slate-200">
                         <div className="space-x-2 flex text-sm">
                             {['xs', 's', 'm', 'l', 'xl'].map((size) => (
                                 <label key={size}>
@@ -41,8 +42,12 @@ const PeerProduct: React.FC<PeerProductProps> = () => {
                             ))}
                         </div>
                     </div>
-                    <h4 className="font-semibold text-lg leading-tight truncate">Louis Philippe</h4>
-                    <div className="mt-1">
+                    <div className="mb-1 flex items-baseline mt-1">
+                        <span className="bg-green-500 text-white text-sx px-2 py-1 inline-block rounded-md">New</span>
+                        <h4 className="ml-2 font-semibold text-lg leading-tight truncate">Louis Philippe</h4>
+                    </div>
+
+                    <div className="mt-2">
                         $2,949.00 &bull;
                         <span className="text-gray-600 text-sm"> 41% OFF</span>
                     </div>
