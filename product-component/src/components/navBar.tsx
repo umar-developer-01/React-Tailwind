@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import Workcation from "../assets/airbnb.jpeg";
+import Button from './navBarWork/button';
+import Anchor from './navBarWork/anchor';
 
 
 
@@ -50,9 +52,9 @@ const NavBar = () => {
                 </div>
 
                 {isOpen && <div className="px-2 pt-2 pb-4 sm:flex">
-                    <a href="/home" className="block px-2 py-1 text-white font-semibold rounded hover:bg-pink-300">List your property</a>
-                    <a href="/contact-us" className="block px-2 py-1 mt-1 text-white font-semibold rounded hover:bg-pink-300 sm:mt-0 sm:ml-2">Trips</a>
-                    <a href="/work" className="block px-2 py-1 mt-1 text-white font-semibold rounded hover:bg-pink-300 sm:mt-0 sm:ml-2">Message</a>
+                    <Anchor route={"/home"} className={"block px-2 py-1 text-white font-semibold rounded hover:bg-pink-300"} name={"List your property"} />
+                    <Anchor route={"/contact-us"} className={"block px-2 py-1 mt-1 text-white font-semibold rounded hover:bg-pink-300 sm:mt-0 sm:ml-2"} name={"Trips"} />
+                    <Anchor route={"/work"} className={"block px-2 py-1 mt-1 text-white font-semibold rounded hover:bg-pink-300 sm:mt-0 sm:ml-2"} name={"Message"} />
                 </div>}
             </header>
         </>
