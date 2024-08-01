@@ -1,16 +1,17 @@
 import React from 'react';
-// import ProductComponent from "./components/productComponent";
-// import PeerProduct from "./components/peerproduct";
-// import CardComponent from "./components/cardComponent";
 import NavBar from "./components/navBar";
+import ProductComponent from "./components/productComponent";
+import PeerProduct from "./components/peerproduct";
+
+
 
 function App() {
   return (
     <div className="">
-      {/* <ProductComponent/> */}
-      {/* <PeerProduct /> */}
-      {/* <CardComponent /> */}
       <NavBar />
+      <ProductComponent/>
+      <PeerProduct />
+
     </div>
   );
 }
